@@ -1,0 +1,1000 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body
+{
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* ------------------------------------------ INDEX.HTML ------------------------------------------ */
+
+header
+{
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 3.75em 7.25em;
+}
+
+.logo
+{
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.75em;
+}
+
+.logo span
+{
+    color: #b70000;
+}
+
+.navbar
+{
+    display: flex;
+}
+
+.navbar a
+{
+    color: #000;
+    font-size: 1.4em;
+    padding: .3em 0em;
+    margin: 0em 1.8em;
+}
+
+.active
+{
+    color: #000;
+    font-weight: bold;
+}
+
+.navbar a:hover:not(.active)
+{
+    color: #f26664;
+}
+
+.navbar .log-in
+{
+    display: none;
+}
+
+.navbar .close 
+{
+    display: none;
+}
+
+.main
+{
+    display: flex;
+    align-items: center;
+}
+
+.main button 
+{
+    display: flex;
+    align-items: center;
+    margin-right: 1.9em;
+    background: none;
+    border: none;
+    gap: .3em;
+}
+
+.main button
+{
+    margin-right: .2em;
+    font-size: 1.6em;
+    color: #000;
+}
+
+.main button .arrow
+{
+    width: .6em;
+    height: .3em;
+}
+
+.main .dropdown 
+{
+    display: block;
+    position: absolute;
+    right: 7.5em;
+    background-color: #fff;
+    border: 2px solid #f4f4f4;
+    border-radius: .5em;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 20%);
+    transform: translateY(-1em);
+    visibility: hidden;
+}
+
+.dropdown.open-dropdown
+{
+    transform: translateY(.3em);
+    visibility: visible;
+}
+
+.main .dropdown ul
+{
+    padding: .625em .625em;
+}
+
+.main .dropdown a
+{
+    padding: .625em;
+    display: flex;
+    align-items: center;
+}
+
+.main .dropdown span
+{
+    color: #000;
+}
+
+.main .dropdown .plus
+{
+    width: 1.75em;
+}
+
+.main .dropdown .person
+{
+    width: 1.75em;
+}
+
+.main .menu
+{
+    display: none;
+    width: 2.1em;
+    height: 1.4em;
+}
+
+.open-nav
+{
+    transform: translateX(0%);
+}
+
+.hero 
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.left
+{
+    padding: 4em 10em;
+}
+
+.hero h1
+{
+    font-size: 2.5em;
+}
+
+.hero p
+{
+    font-size: 1.5em;
+    font-weight: lighter;
+    width: 19em;
+}
+
+.illustration
+{
+    position: absolute;
+    top: 5em;
+    right: .6em;
+    width: 44.7em;
+    height: 37.8em;
+    z-index: -1;
+}
+
+.buttons
+{
+    padding-top: 1.2em;
+    display: flex;
+    flex-direction: row;
+    gap: 1.8em;
+}
+
+.buttons button
+{
+    padding: .6em 1.25em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .8em;
+    border-radius: .5em;
+    background-color: #000;
+}
+
+.buttons .text
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #fff;
+}
+
+.buttons span
+{
+    font-size: .87em;
+    font-weight: lighter;
+}
+
+.buttons .apple-logo
+{
+    width: 1.7em;
+    height: 2.1em;
+}
+
+.buttons .googleplay-logo
+{
+    width: 2.1em;
+    height: 2em;
+}
+
+.about-us
+{
+    display: flex;
+    flex-direction: column;
+    padding: 18em 9.1em;
+    padding-bottom: 12.5em;
+    align-items: center;
+}
+
+.about-us .title
+{
+    width: 25.5em;
+    height: 4.6em;
+}
+
+.about-us p
+{
+    font-size: 1.5em;
+    font-weight: lighter;
+}
+
+.prons
+{
+    display: flex;
+    flex-direction: column;
+    gap: .6em;
+}
+
+.prons .prons-row-1
+{
+    display: flex;
+    flex-direction: row;
+    padding: 6.25em 15.6em 0em 15.6em;
+    gap: 15.6em;
+}
+
+.prons .prons-row-2
+{
+    display: flex;
+    flex-direction: row;
+    padding: 1em 15.6em 0em 15.6em;
+    gap: 15.6em;
+}
+
+.first
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prons .first p
+{
+    text-align: center;
+    font-size: 1.25em;
+    width: 10em;
+}
+
+.prons .prons-row-2 .third
+{
+    width: 9em;
+}
+
+.prons .img
+{
+    display: flex;
+    align-items: center;
+    background: #d3d3d3;
+    border-radius: 50%;
+    padding: 1.62em;
+    box-shadow: 4px 4px 4px 3px  rgba(0, 0, 0, 20%);
+}
+
+.prons p
+{
+    padding-top: 1.56em;
+    text-align: center;
+    font-size: 1.25em;
+    width: 100%;
+}
+
+.best-instructors
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.instructors
+{
+    padding: 3.125em 8.75em;
+    display: flex;
+    flex-direction: row;
+    gap: 3.125em;
+}
+
+.instructor-1 .img
+{
+    background-image: url("./img/instructor-1.jpg");
+    background-size: cover;
+    background-position-y: 40%;
+    margin: 2.5em 1.56em; 
+    width: 212px;
+    height: 212px;
+}
+
+.instructor-2 .img
+{
+    background-image: url("./img/instructor-2.jpg");
+    background-size: cover;
+    background-position-y: 40%;
+    margin: 2.5em 1.56em; 
+    width: 212px;
+    height: 212px;
+}
+
+.instructor-3 .img
+{
+    background-image: url("./img/instructor-3.jpg");
+    background-size: cover;
+    background-position-y: 40%;
+    margin: 2.5em 1.56em; 
+    width: 212px;
+    height: 212px;
+}
+
+.instructor-4 .img
+{
+    background-image: url("./img/instructor-1.jpg");
+    background-size: cover;
+    background-position-y: 40%;
+    margin: 2.5em 1.56em; 
+    width: 212px;
+    height: 212px;
+}
+
+
+#instructor
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f1f2f3;
+    border-radius: .5em;
+}
+
+#instructor p
+{
+    font-size: 1em;
+}
+
+#instructor .instr-name
+{
+    color: #6a6a6a;
+    padding-top: 1.37em;
+    padding-bottom: 2.5em;
+}
+
+.faq
+{
+    padding: 10em 8.75em;
+}
+
+.faq p
+{
+    font-size: 1.5em;
+    font-weight: lighter;
+    width: 19em;
+}
+
+.faq form
+{
+    padding: 2.18em 0em;
+}
+
+.faq label, input
+{
+    display: block;
+}
+
+.faq label
+{
+    font-size: 1.5em;
+    font-weight: lighter;
+}
+
+.faq .input
+{
+    padding: .3em .9em;
+    width: 100%;
+    height: 3em;
+    border-radius: .34em;
+    border: 1px solid #4f4f50;
+    outline: none;
+}
+
+.faq .input:focus
+{
+    border: 3px solid #4f4f50;
+}
+
+.faq .input-field
+{
+    display: flex;
+    justify-content: right;
+}
+
+.faq .submit
+{
+    padding: .5em 2.28em;
+    margin: 2.5em 0em;
+    text-align: right;
+    font-size: 1.25em;
+    border-radius: .5em;
+    border: none;
+    color: #fff;
+    background-color: #b70000;
+}
+
+.footer
+{
+    padding: 2.68em 7.5em;
+    padding-bottom: 7.68em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #dcdcdc;
+}
+
+.footer .col-1 
+{
+    display: flex;
+    flex-direction: column;
+    gap: .93em;
+}
+
+.footer .col-1 p
+{   
+    width: 13.75em;
+    color: #5c5c5c;
+}
+
+.row
+{
+    display: flex;
+    flex-direction: row;
+    gap: 5.43em;
+}
+
+.footer .col-2 
+{
+    padding: .625em 0em;
+    display: flex;
+    flex-direction: column;
+    gap: .93em;
+}
+
+.footer .col-2 p
+{
+    color: #4f4f50;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+.footer .links p
+{
+    color: #5c5c5c;
+    font-weight: lighter;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+
+.footer .col-3
+{
+    padding: .625em 0em;
+}
+
+.footer .col-3 p
+{
+    color: #4f4f50;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+.footer .col-4
+{
+    padding: .625em 0em;
+}
+
+.footer .col-4 p
+{
+    color: #4f4f50;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+.footer .col-4 .links-2 p
+{
+    color: #5c5c5c;
+    font-weight: lighter;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+
+.footer .col-4 .links-2-row 
+{
+    display: flex;
+    flex-direction: row;
+    gap: .56em;
+}
+
+.footer .col-4 .links-2-row p
+{
+    text-decoration: none;
+}
+
+.icon
+{
+    width: 1.5em;
+    color: #5c5c5c;
+}
+
+/* --------------------------------------- END OF INDEX.HTML -------------------------------------- */
+
+
+/* -------------------------------------- SUBSCRIPTIONS.HTML -------------------------------------- */
+
+/* ----------------------------------- END OF SUBSCRIPTIONS.HTML ---------------------------------- */
+
+
+/* ---------------------------------------- CONTACT_US.HTLM --------------------------------------- */
+
+.contact-us
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25em;
+    padding-bottom: 6.25em;
+}
+
+.contact-us .contact-container
+{
+    display: flex;
+    flex-direction: row;
+    gap: 3.125em;
+}
+
+.contact-us .contact-container form
+{
+    display: flex;
+    flex-direction: column;
+    background: #d3d3d3;
+    padding: 1.875em 3.125em;
+    border-radius: .5em;
+    gap: .625em;
+}
+
+.contact-us .contact-container input[type=submit]
+{
+    padding: .56em 1.25em;
+}
+
+.contact-us .contact-container .contacts p
+{
+    font-size: 1.125em;
+    color: #5c5c5c;
+    width: 28em;
+}
+
+.contact-us .contact-container .contacts .container-one .icon-cont
+{
+    display: flex;
+    gap: .31em;
+}
+
+.contact-us .contact-container .contacts .container-one
+{
+    padding: 1.875em 0em;
+}
+
+.contact-us .contact-container .contacts .links p
+{
+    color: #5c5c5c;
+    font-weight: lighter;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+
+.textarea
+{
+    display: flex;
+    flex-direction: column;
+
+}
+
+textarea
+{
+    overflow-wrap: break-word;
+    max-width: 25em;
+    max-height: 9em;
+    border-radius: .5em;
+    border: 1px solid #4f4f50;
+    outline: none;
+    padding: .3em .9em;
+    resize: none;
+}
+
+textarea:focus
+{
+    border: 3px solid #4f4f50;
+}
+
+/* ------------------------------------ END OF CONTACT_US.HTML ------------------------------------ */
+
+
+/* ---------------------------------------- REGIGSTER.HTML ---------------------------------------- */ 
+
+.register
+{
+    padding: 0em 21.875em;
+    padding-bottom: 6.25em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register form
+{
+    margin: 1.5em 0em;
+    padding: 2.8em 3.125em;
+    background: #dcdcdc;
+    border-radius: .5em;
+}
+
+.register form .inputs 
+{
+    display: flex;
+    flex-direction: column;
+    gap: .625em;
+}
+
+input[type=submit]
+{
+    margin-top: 1.5625em;
+}
+
+form input[type=name], input[type=email],
+                input[type=password]
+{
+    width: 25em;
+    height: 2.5em;
+    border-radius: .5em;
+    border: 1px solid #4f4f50;
+    outline: none;
+    padding: .3em .9em;
+}
+
+form input[type=name]:focus, input[type=email]:focus,
+                input[type=password]:focus, input[type=text]:focus
+{
+    border: 3px solid #4f4f50;
+}
+
+form label[for=name], label[for=email],
+                label[for=password], label[for=text]
+{
+    font-size: 1.25em;
+}
+
+form input[type=submit]
+{
+    padding: .625em 1.875em;
+    font-size: 1.125em;
+    background: #b70000;
+    color: #fff;
+    border: none;
+    border-radius: .5em;
+}
+
+.input-btn
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+/* ------------------------------------- END OF REGISTER.HTML ------------------------------------- */
+
+
+
+/* ----------------------------------------- LOG_IN.HTML ------------------------------------------ */
+
+.log-in-form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+    align-items: center;
+    padding-bottom: 6.25em;
+}
+
+.log-in-form form
+{
+    background: #dcdcdc;
+    padding: 3.125em;
+    border-radius: .5em;
+}
+
+.form
+{
+    display: flex;
+    flex-direction: column;
+    gap: .625em;
+}
+
+.checkbox 
+{
+    display: block;
+    position: relative;
+    padding-left: 2.18em;
+    margin-bottom: .75em;
+    cursor: pointer;
+    font-size: .9375em;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+.checkbox input 
+{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+  
+.checkmark 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1.25em;
+    width: 1.25em;
+    background-color: #9b9b9b;
+    border-radius: 5px;
+}
+  
+.checkbox:hover input ~ .checkmark 
+{
+    background-color: #767676;
+}
+  
+.checkbox input:checked ~ .checkmark
+{
+    background-color: #9b9b9b;
+}
+  
+.checkmark:after 
+{
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+.checkbox input:checked ~ .checkmark:after 
+{
+    display: block;
+}
+
+.checkbox .checkmark:after 
+{
+    left: .375em;
+    top: .125em;
+    width: .31em;
+    height: .625em;
+    border: solid #b70000;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.log-in-form input[type=submit]
+{
+    padding: .5625em 1.6875em;
+    font-size: 1.125em;
+    background: #b70000;
+    color: #fff;
+    border: none;
+    border-radius: .5em;
+}
+
+/* -------------------------------------- END OF LOG_IN.HTML -------------------------------------- */
+
+
+
+
+/* -------------------------------------- RESPONSIVE DESIGN --------------------------------------- */
+
+@media (max-width: 1200px) 
+{
+    header
+    {
+        padding: 2.4em 5em;
+    }
+
+    .navbar
+    {
+        position: absolute;
+        padding-top: 16.4em;
+        padding-right: 4em;
+        top: 0%;
+        right: -100%;
+        width: 50%;
+        height: 100vh;
+        background: #cc5757;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: right;
+        transition: all .3s;
+        transition-timing-function: cubic-bezier(0.29, 0.4, 0.11, 0.85);
+    }
+
+    .navbar .close
+    {
+        display: block;
+        position: absolute;
+        top: 3.2em;
+        right: 5.4em;
+        width: 1.4em;
+        height: 1.4em;
+    }
+
+    .navbar a
+    {
+        display: block;
+        margin: 12px 0px;
+        padding: 0px 25px;
+        color: #fff;
+    }
+
+    .navbar a:hover
+    {
+        color: #fff;
+    }
+
+    .navbar .active
+    {
+        font-weight: normal;
+    }
+
+    .navbar .log-in 
+    {
+        display: flex;
+        flex-direction: column;
+        padding-top: 5em;
+    }
+
+    .navbar .log-in .plus
+    {
+        position: absolute;
+        bottom: 197px;
+        right: 265px;
+        width: 2.2em;
+        height: 2.2em;
+    }
+    
+    .navbar .log-in .person
+    {
+        width: 1.2em;
+        height: 1.2em;
+    }
+
+    .main .menu
+    {
+        display: block;
+    }
+    
+    .navbar .open
+    {
+        right: 0%;
+    }
+    
+    .navbar .close.closed
+    {
+        right: -100%;
+    }
+
+    .illustration
+    {
+        width: 539px;
+        top: 1em;
+        right: 0em;
+    }
+
+    .about-us
+    {
+        padding: 9.37em 5em;
+    }
+
+    .prons .prons-row-1
+    {
+        gap: 10em;
+    }
+
+    .prons .prons-row-2
+    {
+        gap: 10em;
+    }
+
+
+}
+
+@media (max-width: 610px) {
+    header 
+    {
+        padding: 3.1em 1.6em;
+    }
+
+    .navbar 
+    {
+        width: 60%;
+        padding-top: 10em;
+        padding-right: 2.2em;
+    }
+
+    .navbar a
+    {
+        font-size: 1.25em;
+        margin: 12px 0px;
+        padding: 0px 0px;
+    }
+
+    .navbar .close
+    {
+        top: 4em;
+        right: 2.3em;
+    }
+
+    .navbar .log-in .plus
+    {
+        bottom: 314px;
+        right: 190px;
+    }
+
+    .main .account 
+    {
+        display: none;
+    }
+}
+
+/* ----------------------------------- END OF RESPONSIVE DESIGN ----------------------------------- */
