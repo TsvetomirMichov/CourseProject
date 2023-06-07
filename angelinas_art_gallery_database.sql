@@ -14,9 +14,34 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
--- Data exporting was unselected.
+-- Dumping structure for table angelinas_art_gallery.admin_pane
+CREATE TABLE IF NOT EXISTS `admin_pane` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(150) NOT NULL DEFAULT '',
+  `password` varchar(150) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- Data exporting was unselected.
+
+-- Dumping structure for table angelinas_art_gallery.gallery
+CREATE TABLE IF NOT EXISTS `gallery` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `image` varchar(150) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Data exporting was unselected.
+
+-- Dumping structure for table angelinas_art_gallery.store
+CREATE TABLE IF NOT EXISTS `store` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `product_name` varchar(150) DEFAULT NULL,
+  `product_info` varchar(200) DEFAULT NULL,
+  `product_price` varchar(50) NOT NULL DEFAULT '0',
+  `image` varchar(150) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- Data exporting was unselected.
 
